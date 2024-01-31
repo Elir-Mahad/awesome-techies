@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+
+<!--Psuedo code: the document is an html file 
+    
+    Info: A doctype is simply a way to tell the browser the type of document it’s looking at.
+          The doctype should always be the first item at the top of any HTML file. 
+-->
+
+<html lang="en">
+  <!-- psuedo code: this html file is written in english -->
+
+  <head>
+    <!--Psuedo code: open the head element
+    
+        Info:   The head element is used to define the head portion of the html file.
+
+                This part of the file contains information related to the file,
+                such: meta element, title element, link elements, etc. 
+
+                The meta element defines the html file's metadata. 
+                Metadata is the data (information) about data.
+                Metadata will not be displayed on the page, but is machine parsable.
+                Metadata is used by browsers (how to display content or reload page), 
+                search engines (keywords), and other web services.
+    -->
+
+    <meta charset="utf-8" />
+
+    <!-- Pseudo code: This meta element declares that the ‘character-set’ that used in this page are the UFT-8 characters.
+        
+         Info : To display an HTML page correctly, a web browser must know which character set to use.
+                ASCII was the first character encoding standard. 
+                ASCII defined 128 different characters that could be used on the internet: 
+                numbers (0-9), English letters (A-Z), and some special characters like ! $ + - ( ) @ < > .
+
+                ASCII, however, only encoded English characters, so if you used other languages 
+                whose alphabet does not consist of English characters, 
+                the text wouldn't be properly displayed on your screen. 
+
+                UTF-8 was created to address ASCII's shortcomings 
+                and as a result, it can translate almost every language in the world.
+    -->
+
+    <meta name="author" content="“Maya”" />
+
+    <!-- Pseudo code: This meta element declares that the name of this page's author is in the content attribute. -->
+
+    <meta name="keywords" content="HTML" />
+
+    <!-- Psuedo code: This meta element declares that the keywords for this page are in the content attribute. 
+    
+         Info : This element provides all the keywords that are associated with your site. 
+                
+                Most people take advantage of the meta keywords field by stuffing 
+                the code with a  high-volume keywords and phrases.
+
+                Make sure that the keywords you select are relevant to the site.
+
+                Don’t use more than about 10 meta keywords for a single page.
+
+                Including misspellings in your keywords may indicate to search engines 
+                that your page is relevant to the (misspelled) search query.
+
+                Keyword variations and plurals are both useful to keep in mind, 
+                as well as the more extensive and more specific phrases.
+
+                Start by labeling each one according to two characteristics: topic and intent. 
+                Topic is pretty self-explanatory.
+                There are three types of intent:
+                    Informational: When the user wants to learn more about a topic.
+                    Navigational: When the user wants to go to a specific website or web page.
+                    Transactional: When the user wants to buy something.       
+                    
+                Resource: https://www.wordstream.com/keywords
+    -->
+
+    <meta
+      name="description"
+      content="A basic html document that will be used for learning purposes."
+    />
+
+    <!-- Pseudo code: This meta element declares that the description of this page is in the content attribute.  
+    
+         Info:  
+                This element provides a brief summary of a site. 
+                Search engines such as Google often display 
+                the meta description in search results, 
+                which can influence click-through rates.
+                
+                Between 50–160 characters
+
+                The meta description tag serves the function of advertising copy. 
+                It draws readers to a website from the SERP, and thus is a very visible and important part of search marketing. 
+
+                Google and other search engines bold keywords in the description when they match search queries. 
+                This bold text can draw the eyes of searchers, 
+                so you should match your descriptions to search terms as closely as possible.
+
+                It's important that you write an original and unique meta description for each page.
+
+                Don't include alphanumeric characters such as quotation marks, 
+                because google cuts off that description at the quotation mark.
+
+                Use active voice and include a call to action 
+                examole: Get motivated to design a new app. This training will guide your through every step. Get it now for free !
+                
+                Resource: https://developers.google.com/search/docs/advanced/crawling/special-tags
+    -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Psuedo code: This meta element declares that the viewport of this page is in the content attribute. 
+        
+         Info:  The viewport is the user's visible area of a web page.
+            
+                The viewport varies with the device, and will be smaller on a mobile phone than on a computer screen.
+
+                The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+                The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+
+    -->
+
+    <link rel="stylesheet" href="style.css" />
+
+    <!--  Psuedo code: This link element declares that this html page will be styled 
+          with code that's written in the file style.css. 
+        
+          Info: Html only puts your content on the browser.
+                The process of decorating your html content, is called styling.
+
+                For example, if you want all your h1,h2,h3 elements to have the color red,
+                and you want your p elements to have the color blue,
+                then you will have write another type of code called CSS (cascading Style Sheets) 
+
+                We will learn about this code later on.
+                For now, you only need to understand that this type of code
+                is responsible for styling (i.e, decorating) your html content. 
+                
+                Colors, text sizes, image sizes, are all defined in css code. 
+                
+                Generally, its good practice to write your css in a different file.
+
+                This file is :
+                described -> stylesheet (because it contains your custom styles)
+                named - >style.css (the extension css identifies that this file is a stylesheet)
+
+                So if you have a file called style.css in your project
+                then then browser will know that this file contains css (custom styles).
+                
+                After writing your css code in the file style.css 
+                You will have to connect the style.css file to your html file.
+                
+                Generally, the link element connects your html file to other files.
+
+                So for this line of code, 
+                the link element declares that a stylesheet will be connected to this html file.
+                This location of this stylesheet is in the href.
+        
+    -->
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Psuedo code: This link element declares that: 
+         this html page will use fonts from google fonts api
+         the name of the font is quicksand
+         and the specifc elements which will use this font, will be identified in the stylesheet.
+      
+         Info:  There are various types of font styles. 
+                If you want to find a font type for your website,
+                then https://fonts.google.com/ is a good place to start. 
+                
+                When you find a specific font type that you like,
+                you have to connect it to your html page.
+
+                Generally, the link element connects your html file to other files.
+
+                For this project we chose the font type name quicksand.
+                
+                Through the href, we connect the google fonts website to our html page,
+                and then in the stylesheet (which is the file style.css)
+                we will identify which elements will have this quicksand font style.
+     -->
+
+    <title>A Basic HTML5 Template</title>
+
+    <!-- Pseudo code: This title element declares that the title of this page is A basic HTML5 Template 
+    
+         Info:  A page’s title tag is displayed as part of the search snippet in a SERP (search engine results page).
+
+                To make your title display properly in the SERPs, keep your titles under 60 characters. 
+
+                Give every page a unique title
+
+    -->
+  </head>
+  <!-- Psuedo code: close the head element  -->
+
+  <body>
+    <!-- Psuedo code: open the body element -->
+
+    <!--  
+
+  Inside the body you should insert all the elements that will hold your content.
+
+  A normal  body contains:
+
+  1. Menu
+
+  2. Header
+
+  3. Unlimited numbers of sections
+
+  4. Footer
+
+    -->
+  </body>
+  <!-- Psuedo code: close the body element  -->
+</html>
+<!--  -->
